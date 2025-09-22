@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import llmIconURL from './llm/llm.png';
+import llmInsetIconURL from './llm/llm-small.svg';
+
 export default [
     {
         name: (
@@ -317,5 +320,21 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'LLM',
+        extensionId: 'llm',
+        collaborator: 'William Hu',
+        iconURL: llmIconURL,
+        insetIconURL: llmInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Chat with large language model using text and images."
+                description="Description for the 'LLM' extension"
+                id="gui.extension.llm.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: true
     }
 ];
