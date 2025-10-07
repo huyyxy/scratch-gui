@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormattedMessage} from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
@@ -45,6 +45,9 @@ import gdxforIconURL from './gdxfor/gdxfor.png';
 import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
+
+import ossIconURL from './oss/oss.png';
+import ossInsetIconURL from './oss/oss-small.svg';
 
 import llmIconURL from './llm/llm.png';
 import llmInsetIconURL from './llm/llm-small.svg';
@@ -320,6 +323,22 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'OSS',
+        extensionId: 'oss',
+        collaborator: 'William Hu',
+        iconURL: ossIconURL,
+        insetIconURL: ossInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Use Aliyun OSS to store your files."
+                description="Description for the 'OSS' extension"
+                id="gui.extension.oss.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: true
     },
     {
         name: 'LLM',
