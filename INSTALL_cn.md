@@ -15,3 +15,6 @@ npm run prepublish
 npm install
 npm start
 ```
+
+## 参考信息
+http://adapter.codelab.club/dev_guide/first-Scratch3-Extension/
